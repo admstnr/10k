@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700');
+
+body, html {
+	padding: 0;
+	margin: 0;
+    font-family: "Lato";
+    background-color: #fff;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #bbb;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 10px;
+    margin-bottom: -5px;
+}
+
+P {
+    text-transform: uppercase;
+    color: #bbb;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#bellGrid {
+	position: absolute;
+	bottom: 0;
+}
+
+.bellWrapper {
+	position: relative;
+	cursor: pointer;
+}
+
+.bellWrapper:hover .hoverbar {
+	background-color: rgba(255, 255, 255, 0.0);
+}
+
+.bellWrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.bellBlock {
+	width: 10vw;
+	height: 7.7vh;
+	box-sizing: border-box;
+	border-bottom: 1px solid #BBB;
+	background-color: red;
+	float: left;
+}
+
+.cover, .hoverbar {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+}
+
+.hoverbar {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.rowDate {
+	position: absolute;
+	line-height: 7.7vh;
+	padding-left: 5px;
+    opacity: 0.4;
+}
+
+.mainRowDate {
+	font-size: 1.4vw;
+    font-weight: 700;
+    opacity: 1;
+}
